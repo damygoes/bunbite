@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const LoadingPage = (props: Props) => {
+const LoadingPage = () => {
   return <span className="loading loading-dots loading-lg m-auto block" />;
 };
 

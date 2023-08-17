@@ -32,7 +32,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <h2 className="card-title">{product.name}</h2>
         {isNew && <div className="badge badge-secondary"> NEW </div>}
         <p>{product.description}</p>
-        <PriceTag price={product.price} className="mt-3" />
+        <div className="flex justify-between">
+          <PriceTag price={product.price} className="mt-3" />
+        </div>
       </div>
     </Link>
   );

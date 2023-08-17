@@ -4,9 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
-
-const Products = async (props: Props) => {
+const Products = async () => {
   const allProducts = await prisma.product.findMany({
     orderBy: { id: "desc" },
   });

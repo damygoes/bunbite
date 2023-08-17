@@ -3,7 +3,7 @@
 import React, { ComponentProps } from "react";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
 
-interface FormSubmitButton extends ComponentProps<"button"> {
+interface FormSubmitButtonProps extends ComponentProps<"button"> {
   children: React.ReactNode;
   className?: string;
 }
@@ -12,7 +12,7 @@ const FormSubmitButton = ({
   children,
   className,
   ...props
-}: FormSubmitButton) => {
+}: FormSubmitButtonProps) => {
   const { pending } = useFormStatus();
 
   return (

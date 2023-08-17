@@ -4,8 +4,9 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import React, { cache } from "react";
-import AddToCartButton from "./AddToCartButton";
+
 import { incrementProductQuantity } from "./actions";
+import AddToCartButton from "@/components/shared/AddToCartButton";
 
 interface ProductPageProps {
   params: {

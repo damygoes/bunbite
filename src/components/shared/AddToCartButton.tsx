@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 
 interface AddToCartButtonProps {
   productId: string;
+  // eslint-disable-next-line no-unused-vars
   incrementProductQuantity: (productId: string) => Promise<void>;
 }
 
@@ -47,7 +48,7 @@ const AddToCartButton = ({
       </button>
       {isPending && <span className="loading loading-spinner loading-md" />}
       {!isPending && success && (
-        <div className="alert alert-success absolute">
+        <div className="text-success ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="stroke-current shrink-0 h-6 w-6"
