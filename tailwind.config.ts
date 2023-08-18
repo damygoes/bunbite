@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,35 +10,20 @@ const config: Config = {
     themes: [
       {
         lightTheme: {
-          primary: "#e74c3c", // Burger Red
-          secondary: "#ffd700", // Cheese Yellow
-          accent: "#228b22", // Lettuce Green
-          neutral: "#7d7d7d", // Bun Brown
-          "base-100": "#ffffff", // White
-          info: "#3498db", // Tomato Blue
-          success: "#2ecc71", // Pickle Green
-          warning: "#f39c12", // Mustard Yellow
-          error: "#c0392b", // Ketchup Red
+          primary: "#f4aa3a",
+          secondary: "#f4f4a1",
+          accent: "#1be885",
+          neutral: "#272136",
+          "base-100": "#ffffff",
+          info: "#778ad4",
+          success: "#23b893",
+          warning: "#f79926",
+          error: "#ea535a",
           body: {
-            "background-color": "#f7f7f7", // Light Gray Background
-          },
-        },
-        darkTheme: {
-          primary: "#e74c3c", // Burger Red
-          secondary: "#ffd700", // Cheese Yellow
-          accent: "#228b22", // Lettuce Green
-          neutral: "#7d7d7d", // Bun Brown
-          "base-100": "#1e1e1e", // Dark Background
-          info: "#3498db", // Tomato Blue
-          success: "#2ecc71", // Pickle Green
-          warning: "#f39c12", // Mustard Yellow
-          error: "#c0392b", // Ketchup Red
-          body: {
-            "background-color": "#121212", // Dark Gray Background
+            "background-color": "#e3e6e6",
           },
         },
       },
     ],
   },
 };
-export default config;
