@@ -22,15 +22,15 @@ export default function ProductCategoryCard({
         height={400}
         src={category.image}
         alt={category.name}
-        className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
+        className="object-cover w-full transition duration-500 aspect-square rounded-lg group-hover:opacity-90"
       />
 
       <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-        <h3 className="text-xl font-bold text-info uppercase">
+        <h3 className="text-xl font-bold text-base-100 uppercase">
           {category.name}
         </h3>
 
-        <Button label="Buy Now" className="bg-accent my-4" />
+        <Button label="Explore" className="bg-accent my-4" />
       </div>
     </Link>
   );

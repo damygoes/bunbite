@@ -12,7 +12,7 @@ export const productCategories = [
     id: 2,
     name: "Vegetarian",
     image:
-      "https://images.unsplash.com/photo-1615485291234-9d694218aeb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHZlZ2V0YXJpYW58ZW58MHwwfDB8fHwy&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1616607238884-197998dbcecc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dmVnZXRhcmlhbnxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60",
   },
   {
     id: 3,
